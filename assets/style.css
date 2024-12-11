@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body and Background */
+body {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.todos-bg-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Heading Styles */
+.todos-heading,
+.create-task-heading,
+.todo-items-heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.create-task-heading-subpart,
+.todo-items-heading-subpart {
+  color: #4caf50;
+}
+
+/* Input and Button Styles */
+.todo-user-input {
+  width: calc(100% - 120px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-todo-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.add-todo-button:hover {
+  background-color: #45a049;
+}
+
+/* To-Do List Container */
+.todo-items-container {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* To-Do Item Styling */
+.todo-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.todo-item-container:hover {
+  transform: scale(1.02);
+}
+
+/* Checkbox Input */
+.checkbox-input {
+  margin-right: 10px;
+}
+
+/* Label Styling */
+.label-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.checkbox-label.checked {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Delete Icon */
+.delete-icon-container {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+.delete-icon:hover {
+  color: #c0392b;
+}
+
+/* Completed Count Section */
+.com {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
